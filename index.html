@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI दुनिया - Artificial Intelligence की पूरी जानकारी</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        header h1 span {
+            color: #00f2fe;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00f2fe;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://unsplash.com') no-repeat center center/cover;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top:0; left:0; width:100%; height:100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .hero h2, .hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        /* Main Content */
+        .main-section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #1e3c72;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #00f2fe;
+            display: block;
+            margin: 8px auto 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #2a5298;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        /* Responsive Settings */
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 15px;
+            }
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container">
+            <h1>AI <span>दुनिया</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">AII क्या है?</a></li>
+                    <li><a href="#types">AI के प्रकार</a></li>
+                    <li><a href="#tools">लोकप्रिय टूल्स</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h2>आर्टिफिशियल इंटेलिजेंस की शक्ति</h2>
+        <p>भविष्य की तकनीक को आसान भाषा में समझें। जानें कैसे AI हमारी दुनिया को बदल रहा है।</p>
+    </section>
+
+    <!-- Content Sections -->
+    <div class="container main-section">
+        
+        <!-- About AI Section -->
+        <section id="about" style="margin-bottom: 50px;">
+            <h2 class="section-title">Artificial Intelligence (AI) क्या है?</h2>
+            <p style="text-align: center; max-width: 800px; margin: auto; font-size: 17px; color: #555;">
+                आर्टिफिशियल इंटेलिजेंस (कृत्रिम बुद्धिमत्ता) कंप्यूटर साइंस की एक शाखा है, जो मशीनों को इंसानों की तरह सोचने, समझने और सीखने की क्षमता देती है। इसके ज़रिए कंप्यूटर डेटा का विश्लेषण करके खुद फैसले ले सकते हैं।
+            </p>
+        </section>
+
+        <!-- AI Types Section -->
+        <section id="types" style="margin-bottom: 50px;">
+            <h2 class="section-title">AI के मुख्य प्रकार</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Narrow AI (कमजोर AI)</h3>
+                    <p>यह केवल किसी एक विशेष काम को करने के लिए बनाया जाता है। जैसे कि Google Assistant, Apple Siri या चेस खेलने वाला कंप्यूटर प्रोग्राम।</p>
+                </div>
+                <div class="card">
+                    <h3>2. General AI (सामान्य AI)</h3>
+                    <p>यह वह AI है जो इंसानों की तरह हर तरह के बौद्धिक कार्य कर सकता है। फिलहाल इस स्तर का पूर्ण AI अभी तक अस्तित्व में नहीं आया है।</p>
+                </div>
+                <div class="card">
+                    <h3>3. Super AI (महा बुद्धिमान AI)</h3>
+                    <p>यह भविष्य की कल्पना है जहाँ मशीनें इंसानों से हर मामले में (भावनाओं और बुद्धिमत्ता में भी) कहीं ज़्यादा आगे निकल जाएँगी।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Tools Section -->
+        <section id="tools">
+            <h2 class="section-title">आज के प्रसिद्ध AI टूल्स</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>ChatGPT & Gemini</h3>
+                    <p>ये एडवांस AI चैटबॉट्स हैं जो आपके किसी भी सवाल का जवाब दे सकते हैं, निबंध लिख सकते हैं और कोडिंग भी कर सकते हैं।</p>
+                </div>
+                <div class="card">
+                    <h3>Midjourney & Dall-E</h3>
+                    <p>ये टूल्स केवल आपके लिखे हुए शब्दों (Text Prompt) को पढ़कर बेहतरीन और सजीव तस्वीरें/आर्टवर्क जनरेट कर देते हैं।</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AI दुनिया. सर्वाधिकार सुरक्षित। | तकनीक और भविष्य</p>
+    </footer>
+
+</body>
+</html>
